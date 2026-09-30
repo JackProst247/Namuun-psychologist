@@ -1,0 +1,180 @@
+/* Үндсэн тохиргоо */
+:root {
+    --primary-color: #f8f6f0; /* Дэвсгэр өнгө */
+    --text-color: #333;
+    --accent-color: #8a9a86; /* Ногоон туяатай өнгө */
+    --bg-dark: #6e7c69; /* Footer өнгө */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    padding: 20px 0;
+    background-color: transparent;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+/* Товчлуурууд */
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: var(--accent-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.btn-outline {
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: #e8e6df;
+    color: var(--text-color);
+    text-decoration: none;
+    border-radius: 8px;
+    margin: 10px;
+    text-align: center;
+    border: none;
+}
+
+/* Hero Section */
+#hero {
+    padding: 80px 0;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-content .text-content {
+    flex: 1;
+    padding-right: 50px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 5px;
+}
+
+.hero-content .subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.hero-content .image-content {
+    flex: 1;
+    text-align: right;
+}
+
+.hero-content .image-content img {
+    max-width: 100%;
+    border-radius: 50%; /* Зууван дугуй хэлбэр оруулах */
+}
+
+/* Хөтөлбөр хэсэг */
+#program, #training, #diagnostics, #news {
+    padding: 60px 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.program-grid {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.program-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    flex: 1;
+    text-align: left;
+}
+
+.program-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+/* Оношилгоо хэсэг */
+.diagnostics-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.diagnostic-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--bg-dark);
+    color: white;
+    padding: 50px 0 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
