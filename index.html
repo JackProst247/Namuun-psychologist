@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Намуухан Сэтгэл Зүйн Зөвлөгөө Заслын Төв</title>
+    <!-- FontAwesome Айкон санг холбох -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,39 +18,77 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="#about">Танилцуулга</a></li>
+                    <li><a href="#hero">Танилцуулга</a></li>
                     <li><a href="#program">Хөтөлбөр</a></li>
                     <li><a href="#training">Сургалтууд</a></li>
                     <li><a href="#news">Мэдээ, зөвлөгөө</a></li>
-                    <li><a href="#contact">Цаг авах</a></li>
+                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScm4KxN1kS_x_J6R3W-R_2_S1_1_S_S_S_S_S/viewform" target="_blank" class="nav-contact-btn">Цаг авах</a></li>
                 </ul>
             </nav>
             <div class="social-icons">
-                 <!-- Сошиал медиа айконууд -->
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
     </header>
 
     <!-- Үндсэн хэсэг (Hero Section / Slider) -->
     <section id="hero">
-        <div class="container hero-content">
-             <div class="text-content">
-                <h1>Б. Намуун</h1>
-                <p class="subtitle">Докторант</p>
-                <p>Би 2019 онд Хүмүүнлэгийн Ухааны Их Сургуулийг сэтгэл судлалын бакалаврын зэрэгтэй төгсөж, 2023 онд мөн сургуулиас магистрын зэрэг хамгаалсан. 2024 оноос Монгол Улсын Боловсролын Их Сургуульд докторантур суралцаж байна.</p>
-                <a href="#" class="btn">Дэлгэрэнгүй</a>
-             </div>
-             <div class="image-content">
-                 <img src="photo/namuun.png" alt="Б. Намуун">
-             </div>
+        <div class="container hero-slider-container">
+            <!-- Слайд 1: Профайл -->
+            <div class="hero-slide active">
+                <div class="text-content">
+                    <h1>Б. Намуун</h1>
+                    <p class="subtitle">Докторант</p>
+                    <p>Би 2019 онд Хүмүүнлэгийн Ухааны Их Сургуулийг сэтгэл судлалын бакалаврын зэрэгтэй төгсөж, 2023 онд мөн сургуулиас магистрын зэрэг хамгаалсан. 2024 оноос Монгол Улсын Боловсролын Их Сургуульд докторантур суралцаж байна.</p>
+                    <a href="#program" class="btn">Дэлгэрэнгүй <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="image-content">
+                    <div class="blob-frame">
+                        <img src="photo/namuun.png" alt="Б. Намуун">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Слайд 2: Сэтгэл зүйн ярилцлага -->
+            <div class="hero-slide">
+                <div class="text-content">
+                    <h2>Сэтгэл зүйтэйгээ ярилцах нь дотор хүнтэйгээ холбогдох эхний алхам юм.</h2>
+                    <ul class="hero-list">
+                        <li>Та сүүлийн үед дотор хүнтэйгээ ярилцсан уу?</li>
+                        <li>Яагаад бухимдаад байгаагаа ойлгохгүй байна уу?</li>
+                        <li>Таны сэтгэл тавгүй, тодорхойгүй мэдрэмж төрөөд байна уу?</li>
+                        <li>"Би яг юу хүсээд байна" гэсэн асуултад хариулах хэцүү байна уу?</li>
+                    </ul>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScm4KxN1kS_x_J6R3W-R_2_S1_1_S_S_S_S_S/viewform" target="_blank" class="btn">Дэлгэрэнгүй <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="image-content">
+                    <div class="blob-frame">
+                        <img src="photo/slide2.png" alt="Сэтгэл зүй">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Слайд 3: Төвийн танилцуулга -->
+            <div class="hero-slide">
+                <div class="text-content">
+                    <h2>Намуухан сэтгэл зүйн зөвлөгөө заслын төв</h2>
+                    <p>Бид хүнийг зөвхөн <strong>"ОНОШЛОХ"</strong> биш, кариер тухайн хүний дотоод нөөц боломжийг нээж, сэтгэл зүйн дархлааг тогтоож, амьдралын чанарыг сайжруулахад чиглэсэн мэргэжлийн зөвлөгөө, засал үйлчилгээ үзүүлдэг.</p>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScm4KxN1kS_x_J6R3W-R_2_S1_1_S_S_S_S_S/viewform" target="_blank" class="btn">Дэлгэрэнгүй <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="image-content">
+                    <div class="blob-frame">
+                        <img src="photo/slide3.png" alt="Төвийн байр">
+                    </div>
+                </div>
+            </div>
         </div>
+
         <!-- Слайдерын цэгүүд -->
         <div class="slider-dots">
-            <span class="dot active"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
+            <span class="dot active" onclick="setSlide(0)"></span>
+            <span class="dot" onclick="setSlide(1)"></span>
+            <span class="dot" onclick="setSlide(2)"></span>
         </div>
     </section>
 
@@ -57,29 +97,26 @@
         <div class="container">
             <h2>Хөтөлбөр</h2>
             <div class="program-grid">
-                <!-- Хөтөлбөр 1 -->
                 <div class="program-card">
                     <div class="icon">
                         <img src="photo/training.png" alt="Байгууллагын сургалт">
                     </div>
                     <h3>01 Байгууллагын сургалт</h3>
-                    <p>Ажилчдын сэтгэл ханамж бол байгууллагын хамгийн том хөрөнгө оруулалт юм...</p>
+                    <p>Ажилчдын сэтгэл ханамж бол байгууллагын хамгийн том хөрөнгө оруулалт юм. Хамт олноо сэтгэл зүйн стрессээс хамгаалж, уур амьсгалыг эрүүлжүүлснээр ажлын бүтээмж дээшилнэ.</p>
                 </div>
-                <!-- Хөтөлбөр 2 -->
                 <div class="program-card">
                     <div class="icon">
                         <img src="photo/consulting.png" alt="Ганцаарчилсан зөвлөгөө">
                     </div>
                     <h3>02 Ганцаарчилсан зөвлөгөө</h3>
-                    <p>Өөрийгөө сонсохоос бүх өөрчлөлт эхэлдэг...</p>
+                    <p>Өөрийгөө сонсохоос бүх өөрчлөлт эхэлдэг. Танд тулгарч буй асуудлыг бид нууцлалын өндөр түвшинд сонсож, туслахад бэлэн. Түгшүүр, айдсаа даван туулах арга замаа цугтаа олоорой.</p>
                 </div>
-                <!-- Хөтөлбөр 3 -->
                 <div class="program-card">
                     <div class="icon">
                         <img src="photo/neuro.png" alt="Тархины нейрофитнес">
                     </div>
                     <h3>03 Тархины нейрофитнес</h3>
-                    <p>Тархиа дасгалжуулж, оюуны чадамжаа шинэ түвшинд гаргаарай...</p>
+                    <p>Тархиа дасгалжуулж, оюуны чадамжаа шинэ түвшинд гаргаарай. Сэтгэл засал болон нейротренинг хосолсон шинэлэг арга барилаар төвлөрөл, ой тогтоолтоо сайжруулж, стрессээ удирдаж сурна.</p>
                 </div>
             </div>
         </div>
@@ -89,11 +126,16 @@
     <section id="training">
         <div class="container">
              <h2>Сургалтууд</h2>
-             <div class="training-buttons">
+             <div class="training-grid">
                  <a href="#" class="btn-outline">Burnout-аас сэргийлэх нь</a>
                  <a href="#" class="btn-outline">Сэтгэл зүйн боловсролтой эцэг эх</a>
-                 <a href="#" class="btn-outline">Оюуны төвлөрөл ба бүтээмж</a>
-                 <!-- Бусад товчнуудыг энд нэмнэ -->
+                 <a href="#" class="btn-outline">Оюуны төвлөрөл ба Бүтээмж</a>
+                 <a href="#" class="btn-outline">Мэргэжлийн харилцаа ба Сэтгэл зүйн хил хязгаар</a>
+                 <a href="#" class="btn-outline">Мэдрэмжээ удирдаж нормоо таних нь</a>
+                 <a href="#" class="btn-outline">Нойрны хямрал засах</a>
+                 <a href="#" class="btn-outline">Mindful Leadership</a>
+                 <a href="#" class="btn-outline">Сэтгэл түгшүүрээс ангижрах арга зүй</a>
+                 <a href="#" class="btn-outline">Сэтгэл засалчтай хийх тархины дасгал</a>
              </div>
         </div>
     </section>
@@ -102,31 +144,72 @@
     <section id="diagnostics">
         <div class="container">
             <h2>Оношилгоо</h2>
-            <div class="diagnostics-grid">
-                <!-- Оношилгооны картууд -->
-                <div class="diagnostic-card">Ажлын байрны стрессийн түвшин</div>
-                <div class="diagnostic-card">Сэтгэл гутрал ба түгшүүрийн түвшин</div>
-                <!-- Бусад картуудыг энд нэмнэ -->
+            <div class="diagnostics-wrapper">
+                <div class="diagnostics-grid">
+                    <div class="diagnostic-card">Ажлын байрны стрессийн түвшин</div>
+                    <div class="diagnostic-card">Сэтгэл гутрал ба Түгшүүрийн түвшин</div>
+                    <div class="diagnostic-card">Анхаарал төвлөрөлтийн чадвар</div>
+                    <div class="diagnostic-card">Харилцааны стиль ба Хий хязгаар</div>
+                    <div class="diagnostic-card">Байгууллагын соёл ба Итгэлцэл</div>
+                    <div class="diagnostic-card">Гэр бүлийн харилцааны оношилгоо</div>
+                    <div class="diagnostic-card">Шийдвэр гаргах ба Гүйцэтгэх чадвар</div>
+                    <div class="diagnostic-card">Өөртөө итгэх итгэлийн үнэлгээ</div>
+                </div>
+                <div class="diagnostics-image">
+                    <img src="photo/neuro-screen.png" alt="EEG Оношилгоо">
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Мэдээ, зөвлөгөө хэсэг (News & Tips) -->
+    <!-- Мэдээ, зөвлөгөө хэсэг (News & Videos) -->
     <section id="news">
         <div class="container">
             <h2>Мэдээ, зөвлөгөө</h2>
-            <div class="news-slider">
-                 <!-- Бичлэгүүдийн картууд -->
+            <div class="news-grid">
                  <div class="video-card">
                      <div class="video-thumbnail">
-                         <img src="video1.jpg" alt="Video">
-                         <div class="play-btn">▶</div>
+                         <img src="photo/video1.png" alt="Video 1">
+                         <div class="play-btn"><i class="fas fa-play"></i></div>
                      </div>
                      <div class="video-info">
-                         <p>"Хайрын улирал хүний сэтгэл зүйд хэрхэн нөлөөлдөг вэ?"</p>
+                         <h3>“ Хайрын улирал хүний сэтгэл зүйд хэрхэн нөлөөлдөг вэ? ”</h3>
+                         <p>Сэтгэл зүйн дарамтанд орохгүйгээр суралцах, амьдрах орчинг бүрдүүлж, хүүхдийнхээ сурах эрмэлзлийг хэрхэн дэмжих вэ?</p>
                      </div>
                  </div>
-                 <!-- Бусад картуудыг энд нэмнэ -->
+
+                 <div class="video-card">
+                     <div class="video-thumbnail">
+                         <img src="photo/video2.png" alt="Video 2">
+                         <div class="play-btn"><i class="fas fa-play"></i></div>
+                     </div>
+                     <div class="video-info">
+                         <h3>“ Нөхөрлөлд гэж юу вэ? ”</h3>
+                         <p>Нөхөрлөл бол бие биенийхээ дотоод ертөнцийг ойлгож, дэмжих үйл явц юм. Таны найз нөхдийн харилцаа эрүүл байна уу?</p>
+                     </div>
+                 </div>
+
+                 <div class="video-card">
+                     <div class="video-thumbnail">
+                         <img src="photo/video3.png" alt="Video 3">
+                         <div class="play-btn"><i class="fas fa-play"></i></div>
+                     </div>
+                     <div class="video-info">
+                         <h3>“ Сургуулийн насны хүүхдэд бол анхаарлаа түр нь хандуулаарай... ”</h3>
+                         <p>Хүүхдийн суралцах сонирхлыг бууруулахгүйгээр хичээл болон сэтгэл зүйн тэнцвэрийг хадгалахад эцэг эхийн оролцоо чухал.</p>
+                     </div>
+                 </div>
+
+                 <div class="video-card">
+                     <div class="video-thumbnail">
+                         <img src="photo/video4.png" alt="Video 4">
+                         <div class="play-btn"><i class="fas fa-play"></i></div>
+                     </div>
+                     <div class="video-info">
+                         <h3>“ ӨӨРИЙГӨӨ ХАЙРЛАХ ”</h3>
+                         <p>Өөрийгөө хайрлах гэдэг нь өөрийнхөө бүх мэдрэмжийг хүлээн зөвшөөрч, өөртөө цаг гаргаж, сэтгэл зүйн хил хязгаараа хамгаалахыг хэлнэ.</p>
+                     </div>
+                 </div>
             </div>
         </div>
     </section>
@@ -135,19 +218,23 @@
     <footer>
         <div class="container footer-content">
             <div class="footer-logo">
-                 <img src="logo-white.png" alt="Намуухан лого">
+                 <img src="photo/logo.png" alt="Намуухан лого">
                  <p>Сэтгэл зүйн зөвлөгөө заслын төв</p>
             </div>
             <div class="contact-info">
                 <h3>Холбоо барих</h3>
                 <p><i class="fas fa-phone"></i> +976 8080 3125</p>
+                <p><i class="fab fa-facebook"></i> Сэтгэл зүйч Б.Намуун</p>
+                <p><i class="fab fa-instagram"></i> Namu_ann</p>
                 <p><i class="fas fa-envelope"></i> namuun.psychologist@gmail.com</p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>Итгэл сургалтын төв - Вэбсайт хөгжүүлсэн...</p>
+            <p>Итгэл сургалтын төв - Вэбсайт хөгжүүлсэн</p>
         </div>
     </footer>
 
+    <!-- JavaScript холбох -->
+    <script src="script.js"></script>
 </body>
 </html>
